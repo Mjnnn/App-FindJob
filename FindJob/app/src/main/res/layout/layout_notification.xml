@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/img_notification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/tlen2" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_notification1"
+                    android:text="Username"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_notification2"
+                    android:text=" Username"
+                    android:textSize="12dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_time_notification"
+                android:text="Vào lúc: ABC-XYZ"
+                android:textColor="@color/blue"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                android:gravity="right"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

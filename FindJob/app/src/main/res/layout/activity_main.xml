@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FD6C2"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/background_start" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/womanlogo_start" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="297dp"
+        android:layout_height="52dp"
+        android:background="@drawable/radius_btn"
+        android:text="Bắt đầu"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="224dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="FindJob"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="42dp"
+        android:text="Nơi công việc được tìm kiếm nhanh chóng và dễ dàng"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

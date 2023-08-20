@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".view.EditProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="#172AA1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="88dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="16dp"
+                android:text="Trung Hiếu"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="4dp"
+                android:text="Nam"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="23 tuổi"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView21"
+                app:layout_constraintStart_toEndOf="@+id/textView21"
+                app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Đà nẵng"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/textView22"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="thông tin liên hệ"
+                android:textAllCaps="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/ed_phonenumber_profile"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:ems="10"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/number"
+                android:hint="Số điện thoại của bạn..."
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:textColorHint="#FF001D" />
+
+            <EditText
+                android:id="@+id/ed_email_profile"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:ems="10"
+                android:drawablePadding="16dp"
+                android:drawableStart="@drawable/gmail"
+                android:hint="Email của bạn..."
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="center|left"
+                android:drawablePadding="16dp"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/location"
+                android:hint="Địa chỉ: 470 Trần Đại Nghĩa,Đà Nẵng"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:textColorHint="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/experience"
+                android:textSize="20dp"
+                android:text="Kinh Nghiệm làm việc" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="#FF001D"
+                android:hint=" + Thêm kinh nghiệm làm việc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/education"
+                android:textSize="20dp"
+                android:text="Học vấn" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="#FF001D"
+                android:hint=" + Thêm học vấn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/skill"
+                android:textSize="20dp"
+                android:text="Kĩ nẵng chuyên môn" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="#FF001D"
+                android:hint=" + Thêm Kĩ năng chuyên môn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/skill1"
+                android:textSize="20dp"
+                android:text="Kĩ nẵng mềm" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="#FF001D"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:hint=" + Thêm Kĩ năng mềm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_edt_blog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:drawablePadding="16dp"
+                android:paddingStart="16dp"
+                android:gravity="start|center"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/battery"
+                android:textSize="20dp"
+                android:text="Trạng thái" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="16dp"
+                android:paddingStart="16dp"
+                android:textStyle="bold"
+                android:textColor="#7CFC00"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColorHint="#7CFC00"
+                android:hint="Sẵn sàng tìm việc." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back_edit_profile"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/custom_btn_back"
+                android:drawableStart="@drawable/img_return"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Quay lại"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_out_cv"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableStart="@drawable/img_out_cv"
+                android:background="@drawable/custom_btn_xam"
+                android:text="Xuất CV"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context=".view.ManageJob">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Công Việc Đăng Tải Của Tôi"
+            android:drawableStart="@drawable/img_title_job"
+            android:gravity="center|left"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_error_list_job"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Bạn chưa đăng tuyển công việc nào cả!"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_back_job"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableStart="@drawable/img_return"
+                android:layout_marginBottom="60dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Quay lại"
+                android:textColor="@color/black"
+                android:background="#c6dde7"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add_job"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:drawableStart="@drawable/img_add_job"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Đăng tải công việc"
+                android:textColor="@color/black"
+                android:background="#c6dde7"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

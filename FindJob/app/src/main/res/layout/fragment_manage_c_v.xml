@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".view.ManageCV">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Tìm kiếm CV"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="340dp"
+                    android:layout_height="320dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_layout_qlcv"
+                    android:orientation="vertical"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:popupBackground="@color/white"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/custom_spiner_qlcv"
+                         />
+
+                    <Spinner
+                        android:id="@+id/spn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:popupBackground="@color/white"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/custom_spiner_qlcv"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:popupBackground="@color/white"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/custom_spiner_qlcv"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_btn_qlcv"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:text="Tìm Kiếm"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mẫu CV nổi bật"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv_manage_list_cv"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="20dp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_back_manage_cv"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:drawableStart="@drawable/img_return"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Quay lại"
+                        android:textColor="@color/black"
+                        android:background="#c6dde7"
+                        />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:id="@+id/btn_add_cv"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:drawableStart="@drawable/img_add_blog"
+                        android:drawablePadding="5dp"
+                        android:layout_marginBottom="60dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Mẫu CV khác"
+                        android:textColor="@color/black"
+                        android:background="#c6dde7"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.SearchDetailBlog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_result_search_detail_blog"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:text="Kết quả tìm kiếm: "
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_error_search_detail_blog"
+            android:gravity="center"
+            android:text="Không tìm thấy kết quả tìm kiếm...Vui lòng thử lại!"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:id="@+id/rv_search_detail_blog"/>
+    </LinearLayout>
+
+
+</LinearLayout>

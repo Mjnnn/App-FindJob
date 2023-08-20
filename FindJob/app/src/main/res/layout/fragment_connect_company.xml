@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.ConnectCompany">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_congty" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="16dp"
+                android:text="Kết nối công ty để\nđăng tuyển dụng"
+                android:textAllCaps="true"
+                android:textColor="#2f4ba0"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="1400dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:layout_constraintVertical_bias="1.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_TenCongTy"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="tên công ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName2"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:hint="Vui lòng nhập thông tin..."
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_TenCongTy"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_LoaiHinhHoatDong"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="loại hình \nhoạt động"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/spn_LoaiHinhHoatDong"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spn_LoaiHinhHoatDong"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_spn"
+                        android:popupBackground="@color/white"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:outlineSpotShadowColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_LoaiHinhHoatDong"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_TrangThaiCongTy"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="trạng thái \ncông ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/spn_TrangThaiCongTy"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spn_TrangThaiCongTy"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:popupBackground="@color/white"
+                        android:background="@drawable/custom_spn"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_TrangThaiCongTy"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_SoNhanVien"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="số nhân viên"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/spn_SoNhanVien"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spn_SoNhanVien"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_spn"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:popupBackground="@color/white"
+
+                        app:layout_constraintStart_toEndOf="@+id/txt_SoNhanVien"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_QuocGia"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="quốc gia"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/spn_QuocGia"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spn_QuocGia"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_spn"
+                        android:popupBackground="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_QuocGia"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_TinhThanh"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="tỉnh/tp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/spn_TinhThanh"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spn_TinhThanh"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_spn"
+                        android:popupBackground="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_TinhThanh"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_DiaChiCT"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="địa chỉ công ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_DiaChiCT"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_DiaChiCT"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:hint="Vui lòng nhập thông tin..."
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_DiaChiCT"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_SoLuocCT"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="sơ lược về \ncông ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_SoLuocCT"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_SoLuocCT"
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/custom_edt_1"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:textColor="@color/black"
+                        android:hint="......."
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_SoLuocCT"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_PhucLoiCT"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="phúc lợi \ncông ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_PhucLoiCT"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_PhucLoiCT"
+                        android:layout_width="240dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/custom_edt_1"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="......."
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_PhucLoiCT"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_NguoiLienhe"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="tên người \nliên hệ"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_NguoiLienHe"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_NguoiLienHe"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:hint="Vui lòng nhập thông tin..."
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_NguoiLienhe"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_DienThoai"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="điện thoại"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_DienThoai"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_DienThoai"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:hint="Vui lòng nhập thông tin..."
+                        android:textColor="@color/black"
+                        android:inputType="textPersonName"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_DienThoai"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_Email"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="email"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_Email"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_Email"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:hint="Vui lòng nhập thông tin..."
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_Email"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_MaSoThue"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="Mã số thuế"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edit_MaSoThue"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/edit_MaSoThue"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_edt"
+                        android:ems="10"
+                        android:hint="Vui lòng nhập mã số thuế."
+                        android:inputType="textPersonName"
+                        android:textColor="@color/black"
+                        android:padding="15sp"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_MaSoThue"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/txt_upload"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/custom_txt"
+                        android:gravity="center"
+                        android:text="Cập nhật ảnh \ncông ty"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_upload"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_upload"
+                        android:layout_width="240dp"
+                        android:layout_height="60dp"
+                        android:text="choose file"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:background="@drawable/custom_btn_upfile"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt_upload"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_back_connect_company"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/custom_btn_back"
+                        android:drawableStart="@drawable/img_return"
+                        android:gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Quay lại"
+                        android:textColor="@color/black" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_DangKi"
+                        android:layout_width="180dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="16dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+                        android:background="@drawable/custom_btn_dangki"
+                        android:text="Đăng kí" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

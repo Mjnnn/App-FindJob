@@ -1,0 +1,110 @@
+package com.example.findjob
+
+import com.example.findjob.model.Account
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
+import com.example.findjob.controller.ApiSever
+import com.example.findjob.databinding.ActivityMainBinding
+import com.example.findjob.model.MyResponse
+import com.google.gson.Gson
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
+
+
+class MainActivity : AppCompatActivity(){
+    lateinit var binding:ActivityMainBinding
+    private val gson = Gson()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding.btnSearch.setOnClickListener {
+            var search = binding.edSearch.text.toString()
+            Log.e("Search: ", "hihihi $search hihihi")
+            if (search != null){
+                Log.e("Search: ", "hahaha $search hahaha")
+                getData(search)
+            }else{
+                Log.e("Search: ", "$search")
+            }
+        }
+        binding.btnEdit.setOnClickListener {
+            var uusername = binding.edUsername.text.toString()
+            var upassword = binding.edPassword.text.toString()
+            var uphonenumber = binding.edPhonenumber.text.toString()
+            var uemail = binding.edEmail.text.toString()
+            postData(uusername,upassword,uphonenumber,uemail)
+        }
+        setContentView(binding.root)
+    }
+
+
+    private fun getData(search:String) {
+        ApiSever.retrofit.getAccount(search).enqueue(
+            object: Callback<List<Account>>{
+                override fun onResponse(
+                    call: Call<List<Account>>,
+                    response: Response<List<Account>>
+                ) {
+                    Toast.makeText(this@MainActivity,"Thành Công",Toast.LENGTH_LONG).show()
+                    var account = response.body()
+                    binding.txtUsername.text = account?.get(0)?.username.toString()
+                    binding.txtPassword.text = account?.get(0)?.password.toString()
+                    binding.txtPhonenumber.text = account?.get(0)?.phonenumber.toString()
+                    binding.txtEmail.text = account?.get(0)?.email.toString()
+
+                    if(binding.txtUsername.text != null){
+                        var uusername = binding.txtUsername.text.toString()
+                        var upassword = binding.txtPassword.text.toString()
+                        var uphonenumber = binding.txtPhonenumber.text.toString()
+                        var uemail = binding.txtEmail.text.toString()
+
+                        binding.edUsername.setText(uusername)
+                        binding.edPassword.setText(upassword)
+                        binding.edPhonenumber.setText(uphonenumber)
+                        binding.edEmail.setText(uemail)
+
+
+                    }
+                }
+
+                override fun onFailure(call: Call<List<Account>>, t: Throwable) {
+                    Toast.makeText(this@MainActivity,"Thất bại, lỗi: $t",Toast.LENGTH_LONG).show()
+                    Log.e("TestGetData","${t}")
+                }
+            }
+
+        )
+    }
+
+    private fun postData(username :String , password:String, phonenumber:String, email:String) {
+        ApiSever.retrofit.updateAccount(username,password,phonenumber,email).enqueue(
+            object : Callback<MyResponse>{
+                override fun onResponse(call: Call<MyResponse>, response: Response<MyResponse>) {
+                   var account = response.body()
+                    Toast.makeText(this@MainActivity,"Thành Công: $account",Toast.LENGTH_LONG).show()
+                }
+
+                override fun onFailure(call: Call<MyResponse>, t: Throwable) {
+                    Toast.makeText(this@MainActivity,"Thất bại, lỗi: ${t}",Toast.LENGTH_LONG).show()
+                    Log.e("TestPortData","$t")
+                }
+            }
+
+        )
+    }
+
+
+
+}
+
+color:
+
+     <color name="purple_200">#FFBB86FC</color>
+        <color name="purple_500">#FF6200EE</color>
+        <color name="purple_700">#FF3700B3</color>
+        <color name="teal_200">#FF03DAC5</color>
+        <color name="teal_700">#FF018786</color>

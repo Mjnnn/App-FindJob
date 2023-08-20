@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_gray_radius"
+        android:paddingTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="306dp"
+                android:background="#ececec"
+                app:srcCompat="@drawable/img_demo_cv_1" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_title_cv"
+                android:text="Tiêu đề CV"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mẫu thiêt kế: "
+                android:id="@+id/txt_topic_cvc"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thời gian đăng tải: "
+                android:layout_marginTop="8dp"
+                android:id="@+id/txt_time_cv"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="right"
+                android:id="@+id/btn_cv_detail"
+                android:text="Xem Chi Tiết"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

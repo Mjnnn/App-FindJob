@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeDetail">
+
+    <fragment
+        android:id="@+id/homeDetail"
+        android:name="com.example.findjob.view.HomeDetail"
+        android:label="fragment_home_detail"
+        tools:layout="@layout/fragment_home_detail" >
+        <action
+            android:id="@+id/action_homeDetail_to_searchJob"
+            app:destination="@id/searchJob" />
+    </fragment>
+    <activity
+        android:id="@+id/searchJob"
+        android:name="com.example.findjob.view.SearchJob"
+        android:label="activity_search_job"
+        tools:layout="@layout/activity_search_job" />
+
+</navigation>

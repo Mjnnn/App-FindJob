@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_notification"
+    app:startDestination="@id/checkLogin">
+
+    <fragment
+        android:id="@+id/checkLogin"
+        android:name="com.example.findjob.view.CheckLogin"
+        android:label="fragment_check_login"
+        tools:layout="@layout/fragment_check_login" >
+        <action
+            android:id="@+id/action_checkLogin_to_login2"
+            app:destination="@id/login2" />
+        <action
+            android:id="@+id/action_checkLogin_to_signInDetail2"
+            app:destination="@id/signInDetail2" />
+        <action
+            android:id="@+id/action_checkLogin_to_notificationDetail"
+            app:destination="@id/notificationDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.findjob.view.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login2_to_notificationDetail"
+            app:destination="@id/notificationDetail" />
+        <action
+            android:id="@+id/action_login2_to_signInDetail2"
+            app:destination="@id/signInDetail2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInDetail2"
+        android:name="com.example.findjob.view.SignInDetail"
+        android:label="fragment_sign_in_detail"
+        tools:layout="@layout/fragment_sign_in_detail" >
+        <action
+            android:id="@+id/action_signInDetail2_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationDetail"
+        android:name="com.example.findjob.view.NotificationDetail"
+        android:label="fragment_notification_detail"
+        tools:layout="@layout/fragment_notification_detail" >
+        <action
+            android:id="@+id/action_notificationDetail_to_blogDetail"
+            app:destination="@id/blogDetail" />
+        <action
+            android:id="@+id/action_notificationDetail_to_jobDetail"
+            app:destination="@id/jobDetail" />
+    </fragment>
+    <activity
+        android:id="@+id/blogDetail"
+        android:name="com.example.findjob.view.BlogDetail"
+        android:label="activity_blog_detail"
+        tools:layout="@layout/activity_blog_detail" />
+    <activity
+        android:id="@+id/jobDetail"
+        android:name="com.example.findjob.view.JobDetail"
+        android:label="activity_job_detail"
+        tools:layout="@layout/activity_job_detail" />
+</navigation>

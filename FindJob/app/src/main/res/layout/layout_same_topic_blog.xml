@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#EBEBEB"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/img_same_topic_blog"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/img_demo_topic_blog_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_same_title_topic_blog"
+                    android:text="Title Blog"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_same_time_topic_blog"
+                    android:layout_marginTop="5dp"
+                    android:text="Ngày đăng tải: "
+                    android:textColor="@color/red"
+                    android:textStyle="italic"
+                    android:textSize="9sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

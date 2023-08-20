@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">FindJob</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    activity_Cong_ty-->
+    <string-array name="LoaiHinhHoatDong">
+        <item>Vui lòng chọn...</item>
+        <item>100% vốn nước ngoài</item>
+        <item>Cá Nhân</item>
+        <item>Công Ty Đa Quốc Gia</item>
+        <item>Cổ Phần</item>
+        <item>Liên Doanh</item>
+        <item>Nhà Nước</item>
+        <item>Trách Nhiệm Hữu Hạn</item>
+    </string-array>
+
+    <string-array name="TrangThaiCongty">
+        <item>Vui lòng chọn...</item>
+        <item>Mở Cửa 24/7</item>
+        <item>Theo Giờ Hành Chính</item>
+        <item>Theo khung giờ riêng của công ty</item>
+    </string-array>
+
+    <string-array name="SoNhanVien">
+        <item>Chọn số nhân viên</item>
+        <item>Ít hơn 10</item>
+        <item>10-20</item>
+        <item>25-99</item>
+        <item>100-499</item>
+        <item>500-999</item>
+        <item>1.000-4.999</item>
+        <item>5.000-9.999</item>
+        <item>10.000-19.999</item>
+        <item>20.000-49.999</item>
+        <item>Hơn 50.000</item>
+    </string-array>
+
+    <string-array name="QuocGia">
+        <item>Việt Nam</item>
+        <item>Bangladesh</item>
+        <item>Campuchia</item>
+        <item>Canada</item>
+        <item>Hàn Quốc</item>
+        <item>Đài Loan</item>
+        <item>Hoa Kỳ</item>
+        <item>Hồng Kông</item>
+        <item>Lào</item>
+        <item>Malaysia</item>
+        <item>Myanmar</item>
+        <item>Nhật Bản</item>
+        <item>Qatar</item>
+        <item>Singapore</item>
+        <item>Trung Quốc</item>
+        <item>Trung Quốc</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="TinhThanh">
+        <item>	Chọn địa điểm	</item>
+        <item>	An Giang	</item>
+        <item>	Bà Rịa-Vũng Tàu	</item>
+        <item>	Bắc Giang	</item>
+        <item>	Bắc Kạn	</item>
+        <item>	Bạc Liêu	</item>
+        <item>	Bắc Ninh	</item>
+        <item>	Bến Tre	</item>
+        <item>	Bình Định	</item>
+        <item>	Bình Dương	</item>
+        <item>	Bình Phước	</item>
+        <item>	Bình Thuận	</item>
+        <item>	Cà Mau	</item>
+        <item>	Cần Thơ	</item>
+        <item>	Cao Bằng	</item>
+        <item>	Đà Nẵng	</item>
+        <item>	Đắk Lắk	</item>
+        <item>	Đắk Nông	</item>
+        <item>	Điện Biên	</item>
+        <item>	Đồng Nai	</item>
+        <item>	Đồng Tháp	</item>
+        <item>	Gia Lai	</item>
+        <item>	Hà Giang	</item>
+        <item>	Hà Nam	</item>
+        <item>	Hà Nội	</item>
+        <item>	Hà Tĩnh	</item>
+        <item>	Hải Dương	</item>
+        <item>	Hải Phòng	</item>
+        <item>	Hậu Giang	</item>
+        <item>	TP. Hồ Chí Minh	</item>
+        <item>	Hòa Bình	</item>
+        <item>	Hưng Yên	</item>
+        <item>	Khánh Hòa	</item>
+        <item>	Kiên Giang	</item>
+        <item>	Kon Tum	</item>
+        <item>	Lai Châu	</item>
+        <item>	Lâm Đồng	</item>
+        <item>	Lạng Sơn	</item>
+        <item>	Lào Cai	</item>
+        <item>	Long An	</item>
+        <item>	Nam Định	</item>
+        <item>	Nghệ An	</item>
+        <item>	Ninh Bình	</item>
+        <item>	Ninh Thuận	</item>
+        <item>	Phú Thọ	</item>
+        <item>	Phú Yên	</item>
+        <item>	Quảng Bình	</item>
+        <item>	Quảng Nam	</item>
+        <item>	Quảng Ngãi	</item>
+        <item>	Quảng Ninh	</item>
+        <item>	Quảng Trị	</item>
+        <item>	Sóc Trăng	</item>
+        <item>	Sơn La	</item>
+        <item>	Tây Ninh	</item>
+        <item>	Thái Bình	</item>
+        <item>	Thái Nguyên	</item>
+        <item>	Thanh Hóa	</item>
+        <item>	Thừa Thiên - Huế	</item>
+        <item>	Tiền Giang	</item>
+        <item>	Trà Vinh	</item>
+        <item>	Tuyên Quang	</item>
+        <item>	Vĩnh Long	</item>
+        <item>	Vĩnh Phúc	</item>
+        <item>	Yên Bái	</item>
+    </string-array>
+    <!--    activity_Cong_ty-->
+
+    <!--    activity_blog-->
+    <string-array name="sp_Blog">
+        <item>Chọn thể loại...</item>
+        <item>Hướng Nghiệp</item>
+        <item>Kinh Nghiệm Phỏng vấn</item>
+        <item>Mẹo Công Sở</item>
+        <item>Thực Chiến</item>
+        <item>Góc Chuyên Gia</item>
+        <item>Bí Quyết Tìm Việc</item>
+        <item>Khác...</item>
+    </string-array>
+    <!--    activity_blog-->
+
+    <!--    activity_Dang_Tai_Cong_Viec-->
+    <string-array name="sp_ChonCT">
+        <item>Chọn công ty ...</item>
+        <item>VinGroup</item>
+        <item>CÔNG TY CỔ PHẦN ĐẦU TƯ HBR HOLDINGS</item>
+        <item>Công ty cổ phần VH Edtech</item>
+        <item>Công ty cổ phần Tập đoàn Đầu tư Bifrost</item>
+        <item>Công Ty Tnhh Widogame</item>
+        <item>Panasonic Center Việt Nam</item>
+        <item>Công ty TNHH MTV Tư vấn đầu tư GFDI</item>
+        <item>ASIM Telecom</item>
+        <item>Khác...</item>
+    </string-array>
+
+    <string-array name="sp_ChonNN">
+        <item>Chọn Ngành Nghề</item>
+        <item>Công nghệ thông tin</item>
+        <item>CTài chính kinh doanh</item>
+        <item>Công Ty Tnhh Widogame</item>
+        <item>Cơ Khí - Kỹ thuật ứng dụng</item>
+        <item>Du lịch - Nhà hàng - khách sạn</item>
+        <item>Điện tử viễn thông</item>
+        <item>Hàng không</item>
+        <item>Hàng hải</item>
+        <item>Marketing-Truyền Thông</item>
+        <item>Logistics</item>
+        <item>Công nghệ ôtô</item>
+        <item>Xuất nhập khẩu</item>
+        <item>Kiến trúc</item>
+        <item>Giáo dục - Văn hóaGiáo dục - Văn hóa</item>
+        <item>Bất động sản</item>
+        <item>Chứng khoán</item>
+        <item>Quản lí điều hành</item>
+        <item>Thời trang</item>
+        <item>Các Ngành Nghề Khác...</item>
+    </string-array>
+
+    <string-array name="sp_ChonTL">
+        <item>Chọn Thể Loại...</item>
+        <item>Fulltime</item>
+        <item>Partime</item>
+        <item>Thực Tập</item>
+        <item>Thời Vụ</item>
+        <item>Tự Lập</item>
+        <item>Hợp Đồng</item>
+        <item>Casual/Temporary</item>
+    </string-array>
+    <!--    activity_Dang_Tai_Cong_Viec-->
+
+    <!--    activity_ql_cv-->
+    <string-array name="spn_1">
+        <item>Tiếng Việt</item>
+        <item>Tiếng Anh</item>
+        <item>Tiếng Nhật</item>
+        <item>Tiếng Hàn</item>
+        <item>Tiếng Pháp</item>
+        <item>Tiếng Trung Quốc</item>
+        <item>Tiếng Nga</item>
+        <item>Các ngôn ngữ khác...</item>
+    </string-array>
+
+    <string-array name="spn_2">
+        <item>Vị trí</item>
+        <item>Programer</item>
+        <item>Edittor</item>
+        <item>Web Developer</item>
+        <item>Designer</item>
+    </string-array>
+
+    <string-array name="spn_3">
+        <item>Tất cả thiết kế</item>
+        <item>Đơn giản</item>
+        <item>Kinh nghiệm</item>
+        <item>Màu sắc</item>
+        <item>Công nghệ</item>
+        <item>Xã hội</item>
+    </string-array>
+</resources>

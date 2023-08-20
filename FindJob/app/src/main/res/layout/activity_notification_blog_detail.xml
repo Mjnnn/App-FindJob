@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NotificationBlogDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#EBEBEB">
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:background="#EBEBEB"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/img_blog_detail" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_title_blog_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Senior là gì? Intern, Fresher, Junior, Senior là gì? Có gì khác biệt"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_btn_theodoi"
+                android:drawableStart="@drawable/add"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="Theo dõi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_content_blog_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16dp"
+            android:text="Content Blog" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_username_blog_detail"
+                android:text="Người đăng tải: ABC"
+                android:textColor="@color/blue"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_time_blog_detail"
+                android:text="Ngày đăng tải: XYZ"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/red"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blog liên quan"
+                android:textSize="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_blog_lienquan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_gravity="start|center"
+                    android:textColor="@color/black"
+                    android:text="Đánh giá bài biết:" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@color/black"
+
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:rating="4"
+                    android:scaleX="0.6"
+
+                    android:scaleY="0.6"
+                    android:stepSize="1" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_cmt_blog_detail"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:ems="10"
+                android:gravity="start"
+                android:paddingTop="12dp"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_edt_blog"
+                android:paddingStart="12dp"
+                android:textColorHint="@color/black"
+                android:inputType="none"
+                android:hint="Lời nhận xét của bạn..." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="16dp"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_btn_bog"
+                android:layout_marginRight="16dp"
+                android:text="Đăng" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_cmt_blog_detail"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

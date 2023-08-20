@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NotificationCompanyDetail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:hint="Tên công ty, từ khóa..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName1"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="Địa chỉ"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:textColorHint="@color/black"
+                    android:textSize="16dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_radius_color"
+                    android:text="Tìm kiếm"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_vingroup" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="250dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="16dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView7"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_tencongty_detail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:gravity="center|left"
+                            android:text="VINGROUP"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_follow"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/custom_btn_theodoi"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/add"
+                            android:text="Theo dõi"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_diachi_company_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="12dp"
+                        android:text="Địa chỉ: Số 7 Đường Bằng Lăng 1, Phường Việt Hưng, Quận Long Biên,Hà Nội,Việt Nam"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_trangthaicty_company_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:textSize="12dp"
+                        android:text="Trạng thái: mở cửa 24/7"
+                        android:textColor="@color/blue"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="16dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Sơ lược về công ty" />
+
+                    <TextView
+                        android:id="@+id/txt_soluoccty_company_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Tiền thân của Vingroup là Tập đoàn Technocom, thành lập năm 1993 tại Ucraina. Đầu những năm 2000, Technocom trở về Việt Nam, tập trung đầu tư vào lĩnh vực du lịch và bất động sản với hai thương hiệu chiến lược ban đầu là Vinpearl và Vincom. Đến tháng 1/2012, công ty CP Vincom và Công ty CP Vinpearl sáp nhập, chính thức hoạt động dưới mô hình Tập đoàn với tên gọi Tập đoàn Vingroup – Công ty CP."
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start|center"
+                            android:paddingStart="10dp"
+                            android:drawablePadding="16dp"
+                            android:drawableStart="@drawable/employee"
+                            android:text="Số lượng nhân viên:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/txt_sonv_companydetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:textColor="#FF0000"
+                            android:text="5000-8000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="16dp"
+                            android:paddingStart="10dp"
+                            android:gravity="start|center"
+                            android:drawableStart="@drawable/activity"
+                            android:text="Loại hình hoạt động:"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/txt_loaihinhhd_company_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:textColor="#FF0000"
+                            android:text="Cổ phần" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/white"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:text="Thông tin liên hệ" />
+
+                <TextView
+                    android:id="@+id/txt_tennguoilh_company_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="16dp"
+                    android:gravity="start|center"
+                    android:paddingStart="8dp"
+                    android:text="Nguyễn Thị A"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txt_sdt_company_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="start|center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="16dp"
+                    android:paddingStart="8dp"
+                    android:textStyle="italic"
+                    android:drawableStart="@drawable/telephone"
+                    android:textColor="@color/black"
+                    android:text="0856143730" />
+
+                <TextView
+                    android:id="@+id/txt_email_company_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:gravity="start|center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:drawablePadding="16dp"
+                    android:paddingStart="8dp"
+                    android:textStyle="italic"
+                    android:drawableStart="@drawable/gmail"
+                    android:textColor="@color/black"
+                    android:text="nguyenthia@gmail.com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="Tất cả đánh giá" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Đánh giá:" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:numStars="5"
+                        android:progressBackgroundTint="@color/black"
+
+                        android:progressTint="@android:color/holo_orange_dark"
+                        android:rating="4"
+                        android:scaleX="0.6"
+
+                        android:scaleY="0.6"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:inputType="none"
+                    android:gravity="start"
+                    android:paddingTop="12dp"
+                    android:background="@drawable/custom_edt_blog"
+                    android:paddingStart="12dp"
+                    android:hint="Lời nhận xét của bạn..." />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_bog"
+                    android:layout_marginRight="8dp"
+                    android:text="Đăng" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="30dp"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rv_cmt_company_detail"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:id="@+id/btn_edit_conpany_detail"
+                    android:background="@drawable/btn_radius_color"
+                    android:drawableStart="@drawable/img_edit"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="16dp"
+                    android:text="Chỉnh sửa"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_delete_company_detail"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/btn_radius_color"
+                    android:drawableStart="@drawable/img_delete"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="24dp"
+                    android:text="Xóa"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

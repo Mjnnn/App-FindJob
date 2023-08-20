@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_profile"
+    app:startDestination="@id/login">
+
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.findjob.view.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_profileDetail"
+            app:destination="@id/profileDetail" />
+        <action
+            android:id="@+id/action_login_to_signInDetail"
+            app:destination="@id/signInDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileDetail"
+        android:name="com.example.findjob.view.ProfileDetail"
+        android:label="fragment_profile_detail"
+        tools:layout="@layout/fragment_profile_detail" >
+        <action
+            android:id="@+id/action_profileDetail_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_profileDetail_to_manageCompany"
+            app:destination="@id/manageCompany" />
+        <action
+            android:id="@+id/action_profileDetail_to_manageBlog"
+            app:destination="@id/manageBlog" />
+        <action
+            android:id="@+id/action_profileDetail_to_manageCV"
+            app:destination="@id/manageCV" />
+        <action
+            android:id="@+id/action_profileDetail_to_manageJob"
+            app:destination="@id/manageJob" />
+        <action
+            android:id="@+id/action_profileDetail_to_manageFollow"
+            app:destination="@id/manageFollow" />
+        <action
+            android:id="@+id/action_profileDetail_to_editProfile"
+            app:destination="@id/editProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInDetail"
+        android:name="com.example.findjob.view.SignInDetail"
+        android:label="fragment_sign_in_detail"
+        tools:layout="@layout/fragment_sign_in_detail" >
+        <action
+            android:id="@+id/action_signInDetail_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageCompany"
+        android:name="com.example.findjob.view.ManageCompany"
+        android:label="fragment_manage_company"
+        tools:layout="@layout/fragment_manage_company" >
+        <action
+            android:id="@+id/action_manageCompany_to_connectCompany"
+            app:destination="@id/connectCompany" />
+        <action
+            android:id="@+id/action_manageCompany_to_profileDetail"
+            app:destination="@id/profileDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectCompany"
+        android:name="com.example.findjob.view.ConnectCompany"
+        android:label="fragment_connect_company"
+        tools:layout="@layout/fragment_connect_company" >
+        <action
+            android:id="@+id/action_connectCompany_to_manageCompany"
+            app:destination="@id/manageCompany" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageBlog"
+        android:name="com.example.findjob.view.ManageBlog"
+        android:label="fragment_manage_blog"
+        tools:layout="@layout/fragment_manage_blog" >
+        <action
+            android:id="@+id/action_manageBlog_to_postBlog"
+            app:destination="@id/postBlog" />
+        <action
+            android:id="@+id/action_manageBlog_to_profileDetail"
+            app:destination="@id/profileDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/postBlog"
+        android:name="com.example.findjob.view.PostBlog"
+        android:label="fragment_post_blog"
+        tools:layout="@layout/fragment_post_blog" >
+        <action
+            android:id="@+id/action_postBlog_to_manageBlog"
+            app:destination="@id/manageBlog" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageCV"
+        android:name="com.example.findjob.view.ManageCV"
+        android:label="fragment_manage_c_v"
+        tools:layout="@layout/fragment_manage_c_v" >
+        <action
+            android:id="@+id/action_manageCV_to_profileDetail"
+            app:destination="@id/profileDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageJob"
+        android:name="com.example.findjob.view.ManageJob"
+        android:label="fragment_manage_job"
+        tools:layout="@layout/fragment_manage_job" >
+        <action
+            android:id="@+id/action_manageJob_to_profileDetail"
+            app:destination="@id/profileDetail" />
+        <action
+            android:id="@+id/action_manageJob_to_postJob"
+            app:destination="@id/postJob" />
+    </fragment>
+    <fragment
+        android:id="@+id/postJob"
+        android:name="com.example.findjob.view.PostJob"
+        android:label="fragment_post_job"
+        tools:layout="@layout/fragment_post_job" >
+        <action
+            android:id="@+id/action_postJob_to_manageJob"
+            app:destination="@id/manageJob" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageFollow"
+        android:name="com.example.findjob.view.ManageFollow"
+        android:label="fragment_manage_follow"
+        tools:layout="@layout/fragment_manage_follow" >
+        <action
+            android:id="@+id/action_manageFollow_to_profileDetail"
+            app:destination="@id/profileDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.example.findjob.view.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfile_to_profileDetail"
+            app:destination="@id/profileDetail" />
+    </fragment>
+</navigation>

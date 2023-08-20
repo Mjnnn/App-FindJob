@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context=".view.ManageFollow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Công Việc Đã Theo dõi"
+                    android:drawableStart="@drawable/img_title_job"
+                    android:gravity="center|left"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_error_list_follow_job"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Bạn chưa theo dõi công việc nào cả!"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_follow_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Công Ty Đã Theo Dõi"
+                    android:drawableStart="@drawable/img_title_company"
+                    android:gravity="center|left"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_error_list_follow_company"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Bạn chưa theo dõi công ty nào cả!"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_follow_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Blog Đã Theo Dõi"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:drawableStart="@drawable/img_title_blog"
+                    android:drawablePadding="8dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_error_list_follow_blog"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="Bạn chưa theo dõi Blog nào cả!"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_follow_blog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginTop="20dp"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_back_follow"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:drawableStart="@drawable/img_return"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Quay lại"
+                        android:textColor="@color/black"
+                        android:background="#c6dde7"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

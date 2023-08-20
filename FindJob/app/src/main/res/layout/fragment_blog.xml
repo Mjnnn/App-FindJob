@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c6dde7"
+    tools:context=".view.Blog">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_blog_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/boder_background_white_txt_ed"
+                android:drawableStart="@drawable/icon_search"
+                android:paddingLeft="70dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:text="Tìm kiếm việc blog, bài viết nổi bật "
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Kinh Nghiệm Phỏng Vấn" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_xemthem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="italic"
+                        android:gravity="right"
+                        android:text="Xem thêm >>" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_kinhnghiemphongvan_blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c6dde7" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Hướng Nghiệp" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_xemthemm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="italic"
+                        android:gravity="right"
+                        android:text="Xem thêm >>" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_huongnghiep_blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c6dde7" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Góc Chuyên Gia" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_xemthemmm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="italic"
+                        android:gravity="right"
+                        android:text="Xem thêm >>" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_gocchuyengia_blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c6dde7" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:text="Bí Quyết Tìm Việc" />
+
+
+
+                <TextView
+                    android:id="@+id/txt_xemthemmmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="italic"
+                    android:gravity="right"
+                    android:text="Xem thêm >>" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_biquyettimviec_blog"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#c6dde7" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView44444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:text="Mẹo Công Sở" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_xemthemmmmm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="italic"
+                        android:gravity="right"
+                        android:text="Xem thêm >>" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_meocongso_blog"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c6dde7" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

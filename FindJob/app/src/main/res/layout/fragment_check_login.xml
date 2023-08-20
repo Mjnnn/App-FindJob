@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.CheckLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Bạn chưa đăng nhập \nHãy đăng nhập để xem thông báo của bạn!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login_notification"
+                android:background="@drawable/btn_radius_color"
+                android:layout_marginRight="15dp"
+                android:text="Đăng Nhập"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_radius_color"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btn_sign_in_notification"
+                android:text="Đăng Ký"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

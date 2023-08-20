@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c6dde7"
+    android:orientation="vertical"
+    tools:context=".view.Setting">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:drawableLeft="@drawable/img_refer2"
+                    android:gravity="start|center"
+                    android:paddingLeft="20dp"
+                    android:background="@drawable/background_btn_while"
+                    android:drawablePadding="10dp"
+                    android:text="Giới thiệu FindJob cho bạn bè"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="18dp"
+                    android:drawableRight="@drawable/icon_right"
+                    android:textColor="@color/black"
+                    android:drawableLeft="@drawable/img_support"
+                    android:gravity="start|center"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_btn_while"
+                    android:text="Hỗ trợ" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/icon_right"
+                    android:drawableLeft="@drawable/img_chinhsach"
+                    android:gravity="start|center"
+                    android:paddingLeft="20dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_btn_while"
+                    android:text="Chính sách" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/img_languages"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_btn_while"
+                    android:text="Ngôn ngữ" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:gravity="start|center"
+                    android:drawableLeft="@drawable/img_info"
+                    android:paddingLeft="20dp"
+                    android:drawableRight="@drawable/icon_right"
+                    android:drawablePadding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/background_btn_while"
+                    android:text="Thông tin về ứng dụng" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="italic"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="Vesion 1.0.1"/>
+
+            </LinearLayout>
+</LinearLayout>

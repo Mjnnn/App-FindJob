@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.PostJob">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textColor="#2962ff"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Đăng tuyển dụng" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/img_dangtuyen" />
+
+            <Spinner
+                android:id="@+id/sp_ChonCT"
+                android:popupBackground="@color/white"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/custom_edt_blog"
+                android:paddingLeft="16dp"/>
+
+            <Spinner
+                android:id="@+id/sp_ChonNN"
+                android:popupBackground="@color/white"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="16dp"
+                android:layout_width="320dp"
+                android:paddingLeft="16dp"
+                android:background="@drawable/custom_edt_blog"
+                android:layout_height="60dp" />
+
+            <Spinner
+                android:id="@+id/sp_ChonTL"
+                android:popupBackground="@color/white"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_width="320dp"
+                android:paddingLeft="16dp"
+
+                android:background="@drawable/custom_edt_blog"
+                android:layout_height="60dp" />
+
+            <EditText
+                android:id="@+id/ed_chucdanh"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_edt_blog"
+                android:drawableStart="@drawable/job_position"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Chức danh"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_SoLuong"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:ems="10"
+                android:padding="16dp"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/quantity"
+                android:textColorHint="@color/black"
+                android:background="@drawable/custom_edt_blog"
+                android:inputType="number"
+                android:hint="Số lượng tuyển dụng" />
+
+            <EditText
+                android:id="@+id/edt_MucLuong"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/custom_edt_blog"
+                android:drawableStart="@drawable/wage"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Mức lương chi trả(Theo $)"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="4dp"
+                android:text="Thời Gian Kết Thúc" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txt_date"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/custom_edt_blog"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:hint="mm/dd/yyy"
+                    android:inputType="date"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="16dp"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnDatePicker"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDatePicker"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:drawableStart="@drawable/date"
+                    android:layout_marginEnd="16dp"
+                    android:padding="15dp"
+                    android:background="@drawable/custom_btn_choose"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txt_date"
+                    app:layout_constraintTop_toTopOf="@+id/txt_date" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/edt_luyy"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:ems="10"
+                android:background="@drawable/custom_edt_blog"
+                android:paddingLeft="16dp"
+                android:gravity="start"
+                android:paddingTop="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:inputType="none"
+                android:paddingRight="16dp"
+                android:hint="Lưu ý tuyển dụng..." />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginStart="32dp"
+                android:text="Hình ảnh đăng tải" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button5"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Choose file"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:background="@drawable/custom_btn_choose"
+                    app:layout_constraintEnd_toStartOf="@+id/textView15"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="No file choose"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/button5"
+                    app:layout_constraintStart_toEndOf="@+id/button5"
+                    app:layout_constraintTop_toTopOf="@+id/button5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_back_post_job"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/custom_btn_back"
+                    android:drawableStart="@drawable/img_return"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Quay lại"
+                    android:textColor="@color/black" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit_job"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="34dp"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:background="@drawable/custom_btn_bog"
+                    android:textColor="@color/white"
+                    android:text="Đăng tuyển dụng" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

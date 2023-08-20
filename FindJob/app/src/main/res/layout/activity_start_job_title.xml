@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.StartJobTitle">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="117dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner_top_start_job_title" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="433dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/banner_bottom_start_job_title" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bạn đang tìm việc làm gì ở Việt Nam?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="367dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Bạn chỉ cần nhập một chức danh công việc,loại công việc hoạc để trống để đến bước tiếp theo."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="325dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/banner_start_job_title" />
+
+    <EditText
+        android:id="@+id/ed_start_job_title"
+        android:layout_width="362dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/boder"
+        android:drawableStart="@drawable/img_search"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Chức danh,loại công việc,vị trí,..."
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start_job_title"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_radius_color"
+        android:text="Tiếp Theo"
+        android:paddingRight="20dp"
+        android:paddingLeft="40dp"
+        android:drawableEnd="@drawable/img_right_white"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

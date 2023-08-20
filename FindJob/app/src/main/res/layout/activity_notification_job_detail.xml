@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context=".view.NotificationJobDetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:id="@+id/cardView_job_detail"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:background="@color/white"
+                app:srcCompat="@drawable/img_demo_hired" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_job_detail">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_tencongviec_job_detail"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Công nghệ thông tin"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_btn_theodoi"
+                    android:drawableStart="@drawable/add"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="Theo dõi"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_vitri_job_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/img_vitri"
+                    android:drawablePadding="10dp"
+                    android:text="Vị trí: Developer"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_theloai_job_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/img_theloai"
+                    android:drawablePadding="10dp"
+                    android:text="Hình thức: PartTime "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_diachi_job_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/img_location_jobb"
+                    android:drawablePadding="10dp"
+                    android:text="Địa Chỉ: Đường 14/2 Trần Duy Hưng,Quận Hải Châu,TP Đà Nẵng "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_luyy_job_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/img_luyy"
+                    android:drawablePadding="10dp"
+                    android:text="Lưu ý: Kĩ năng lập trình tốt\n Thành thạo tiếng Anh
+                \nBiết sử dụng nhiều ngôn ngữ\n Khả năng hoạt động nhóm,... "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+            <TextView
+                android:id="@+id/txt_mucluong_job_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/img_mucluong"
+                android:drawablePadding="10dp"
+                android:text="Mức lương: 800$ - 1000$"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:id="@+id/txt_soluong_job_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/img_soluong"
+                android:drawablePadding="10dp"
+                android:text="Số lượng: 5"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="Hạn nộp hồ sơ:"
+                android:drawableStart="@drawable/img_ngayketthuc"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_ngayketthuc_job_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="30-04-2023"
+                android:textColor="#FA0D0D"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Việc làm liên quan"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_congvieclienquan"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:id="@+id/rt_job_detail"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ln10"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:paddingStart="32dp"
+                android:text="Đánh giá công việc:"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+
+                android:numStars="5"
+                android:progressBackgroundTint="@color/black"
+
+                android:progressTint="@android:color/holo_orange_dark"
+                android:rating="4"
+                android:scaleX="0.6"
+
+                android:scaleY="0.6"
+                android:stepSize="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:id="@+id/ln10"
+            android:layout_marginBottom="24dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rt_job_detail">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/img_cmt"
+                android:drawablePadding="2dp"
+                android:text="Bình luận"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:gravity="start"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:hint="Nhập bình luận..."
+                android:background="@drawable/custom_edt_blog"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:inputType="none" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/img_hand_right"
+                android:drawablePadding="5dp"
+                android:layout_gravity="right"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="#c6dde7"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="16dp"
+                android:text="gửi bình luận" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_cmt_job_detail"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
